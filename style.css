@@ -228,4 +228,8 @@ footer {
   section {
     margin-bottom: 10rem;
   }
+
+  #gottop{
+    color: var(--secondary-color);
+  }
 }
