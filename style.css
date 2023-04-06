@@ -7,10 +7,10 @@ html {
 .miki-btn {
   border-radius: 999px;
   color: white;
-  width: 450px;
-  height: 110px;
+  width: 28rem;
+  height: 6rem;
   border: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 0;
   margin: 0 auto;
@@ -26,7 +26,9 @@ a:visited {
   text-decoration: inherit;
   color: inherit;
 }
-
+a:hover {
+  color: var(--secondary-color);
+}
 body {
   padding: 0;
   color: var(--black-color);
@@ -42,22 +44,39 @@ ul {
   --secondary-color: #ffa800;
   --third-color: #af0101;
   --black-color: #333333;
+  scroll-padding-top: 150px;
 }
 
 section {
-  margin-bottom: 200px;
+  margin-bottom: 12rem;
 }
 
 .miki-bg-main {
   background-color: var(--main-color);
 }
 
+button.miki-bg-main:hover {
+  background-color: #108d96;
+}
+
 .miki-bg-secondary {
   background-color: var(--secondary-color);
 }
 
+button.miki-bg-secondary:hover {
+  background-color: #fab835;
+}
+
 .miki-bg-third {
   background-color: var(--third-color);
+}
+
+.miki-bg-line {
+  background-color: #1fb637;
+}
+
+button.miki-bg-line:hover {
+  background-color: #6cd27d;
 }
 
 * {
@@ -66,6 +85,10 @@ section {
 
 header {
   height: 100vh;
+}
+
+.sns:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 992px) {
@@ -194,4 +217,15 @@ footer {
   z-index: 1;
   opacity: 1;
   transition: opacity 1s;
+}
+
+@media screen and (max-width: 991px) {
+  .miki-btn {
+    font-size: 1.1rem;
+    width: 18.5rem;
+  }
+
+  section {
+    margin-bottom: 10rem;
+  }
 }
