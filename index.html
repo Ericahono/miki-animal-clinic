@@ -31,6 +31,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="fixed-top">
@@ -246,6 +247,9 @@
             class="col-lg-5 col-xxl-6 d-flex align-items-lg-center align-items-xxl-end justify-content-center justify-content-lg-end ps-lg-4"
           >
             <img
+              data-aos="flip-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3500"
               src="./images/guide.png"
               alt="Miki Animal Clinic Schedule"
               style="max-width: 100%"
@@ -321,10 +325,11 @@
           </div>
         </div>
         <div
+          data-aos="fade-up"
           id="gottop"
           class="d-flex justify-content-center justify-content-lg-end fixed-bottom me-3 mb-3"
         >
-          <a href="#banner"
+          <a href="#"
             ><div><img src="./images/gotop.png" /></div>
             <span class="fw-bold" style="padding-left: 9px">TOP</span></a
           >
@@ -355,6 +360,10 @@
           navBtnWrapper.classList.remove("expanded");
         } else navBtnWrapper.classList.add("expanded");
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
